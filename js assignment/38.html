@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function findNotDivisibleBy2_4_6(start, end) 
+        {
+            
+            
+            for (let i = start; i <= end; i++) {
+            
+              if (i % 2 !== 0 && i % 4 !== 0 && i % 6 !== 0) {
+                console.log(i);
+              }
+            }
+          }  
+          const start = parseInt(prompt("Enter the start of the range:"));
+          const end = parseInt(prompt("Enter the end of the range:"));
+          console.log(`Numbers not divisible by 2, 4, or 6 between ${start} and ${end} are:`);
+          findNotDivisibleBy2_4_6(start, end);
+          
+    </script>
+</body>
+</html>

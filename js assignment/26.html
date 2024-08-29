@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calculateNetSalary(baseSalary, bonuses, commissions, deductions) {
+            // Calculate total earnings
+            const totalEarnings = baseSalary + bonuses + commissions;
+        
+            // Calculate net salary after deductions
+            const netSalary = totalEarnings - deductions;
+        
+            return netSalary;
+        }
+        
+        // Example data
+        const baseSalary = 60000;  // Annual base salary
+        const bonuses = 5000;      // Annual bonuses
+        const commissions = 3000;  // Annual commissions
+        const deductions = 8000;   // Annual deductions
+        
+        // Calculate net salary
+        const netSalary = calculateNetSalary(baseSalary, bonuses, commissions, deductions);
+        
+        console.log(`The net salary is: $${netSalary}`);
+        
+    </script>
+</body>
+</html>

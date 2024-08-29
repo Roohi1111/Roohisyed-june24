@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calculateSalary(baseSalary,bonuses,commissions,deductions)
+        {
+            const totalEarnings=baseSalary + bonuses + commissions;
+            const netSalary=totalEarnings-deductions;
+            return("netSalary");
+            
+        }
+        const baseSalary = 60000;  
+        const bonuses = 5000;      
+        const commissions = 3000;  
+        const deductions = 8000;   
+        
+        
+        const netSalary = calculateSalary(baseSalary, bonuses, commissions, deductions);
+        
+        console.log(`The net salary is: ${netSalary}`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calculateInsurance()
+
+        {
+          let coverage=parseInt(prompt("enter the amount"));
+          let rate=parseInt(prompt("enter the percantage"));
+          let rateDecimal=rate/100;
+          let premium=(coverage*rateDecimal);
+          
+        }
+        let premium=calculateInsurance();
+        console.log("the insurance premium is:"+premium);
+    </script>
+</body>
+</html>
